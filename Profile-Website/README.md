@@ -4,5 +4,9 @@ This project is from [Techtonica](https://techtonica.org/)'s open source curricu
 
 ### Viewing the webpage
 
-Click [here](https://lisaau.github.io/portfolio-website-assignment/) to view the portfolio webpage.
+The site is hosted on both Netlify and GitHub:
+
+https://lisaau.github.io/portfolio-website-assignment/
+
+https://lisaau.netlify.com/
 

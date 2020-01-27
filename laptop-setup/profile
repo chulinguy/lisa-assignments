@@ -1,0 +1,12 @@
+source "$HOME/scripts/aliases"
+export SCRIPTS="$HOME/scripts"
+export PS1="\W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $  "
+export PATH=$PATH:$HOME/scripts
+alias gs="git status"
+
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+

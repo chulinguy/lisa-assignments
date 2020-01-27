@@ -1,6 +1,0 @@
-source "$HOME/scripts/aliases"
-export SCRIPTS="$HOME/scripts"
-export PS1="😄  \W >> "
-export PATH=$PATH:$HOME/scripts
-alias gs="git status"
-

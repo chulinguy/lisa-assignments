@@ -1,6 +1,11 @@
 alias cdscr='cd "$HOME/scripts"'
 alias vsc="open . -a Visual\ Studio\ Code"
+
 alias gs="git status"
+alias gl="git log"
+alias grv="git remote -v"
+
 alias c="clear"
 alias assn="cd ~/Desktop/assignments"
 alias assm="cd ~/Desktop/assessments"
+alias tch="cd ~/Desktop/Techtonica"

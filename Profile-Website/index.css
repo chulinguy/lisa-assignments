@@ -78,6 +78,17 @@ p.lead {
     margin-right: 1rem;
   }
 
+.progress {
+    margin-bottom: 1%;
+}
+
+.progress-bar-header {
+    background-color: #868e96;
+}
+
+.skill-bar {
+    padding-right: 20%;;
+}
 
 #about-me {
     padding-right: 25%;
