@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <!--  The jQuery library is a single JavaScript file, and you reference it with the HTML.-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1>Events:</h1>
+    <ul id="event">
+      <!-- EVENTS GET INSERTED HERE -->
+    </ul>
+    <!-- LET'S USER SELECT PRICE RANGE -->
+    <p>Search by price range:</p>
+    <input type="text" id="lowerBound" placeholder="low"/> -
+    <input type="text" id="upperBound" placeholder="high"/>
+    <button id="submit">Submit</button>
+    <button id="reset">Reset</button>
+    <p id="announcement"></p>
+  </body>
+  <script src = "./event.js"></script>
+  <script src="moment.js"></script>
+  <script>
+      moment().format();
+  </script>
+</html>

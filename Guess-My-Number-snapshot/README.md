@@ -7,7 +7,8 @@ Game includes the following features:
 - Displaying whether the answer is higher, lower, or correct
 - Tracking how many wrong guesses the user has made so far and display that count
 - Tracking what numbers the user has already guessed and display those 
-- Letting the user choose the range of the secret number
+
+View the game at: https://lisaau.github.io/Guess-My-Number/
 
 ### Built with:
 

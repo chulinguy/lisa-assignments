@@ -1,0 +1,52 @@
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    justify-content: space-evenly;
+    margin-top: 10%;
+  }
+
+body {
+    background-color: #f7c6b5;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+#users-guess {
+    width: 140px;
+    padding: 10px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    padding: 10px 20px;
+    background-color: #F2A387;
+    color: black;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+p {
+    width: 500px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+.actions {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+#reset {
+    margin-top: 30px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#announcement {
+    color = red
+}

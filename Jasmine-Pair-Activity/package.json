@@ -1,0 +1,12 @@
+{
+  "name": "Jasmine-Pair-Activity",
+  "version": "1.0.0",
+  "description": "### Installing",
+  "main": "invert.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

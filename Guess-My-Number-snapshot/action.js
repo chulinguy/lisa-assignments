@@ -1,4 +1,5 @@
 let previousGuessTracker = [];
+let numberOfGuesses = 1;
 
 $(document).ready(() => {
     const answer = Math.floor(Math.random() * 10); // Randomly generated number and logic to determine if guess is right
@@ -21,20 +22,34 @@ $(document).ready(() => {
         // Handle guess logic
         if(guessNum === answer) {
             //$('#previous-guesses').hide();
-            $('#announcement').html(`${guessNum} is correct! Press "reset" button to play again.`);
+            if (numberOfGuesses === 1) {
+                $('#announcement').html(`${guessNum} is correct! You guess it in ${numberOfGuesses} try. \n Press "reset" button to play again.`);
+            } else {
+                $('#announcement').html(`${guessNum} is correct! You guess it in ${numberOfGuesses} tries. \n Press "reset" button to play again.`);
+            }
 
         } else {
             // Tells the user to guess higher or lower
-            if (guessNum < answer) {
-                $('#announcement').html('Guess Higher');
-            } else {
+            console.log(guessNum);
+            console.log(guess);
+            console.log(typeof guessNum);
+            console.log(typeof NaN)
+            if (guessNum > answer) {
                 $('#announcement').html('Guess Lower');
+                numberOfGuesses++;
+            }
+            else if (guessNum < answer) {
+                $('#announcement').html('Guess Higher');
+                numberOfGuesses++;
+            } else {
+                $('#announcement').html('Please enter a number');
+                numberOfGuesses++;
             }
         }
 
         // Tracking number of wrong guesses and displays count
         previousGuessTracker.push(guessNum);
-        $('#previous-guesses').html('Previous Guesses: ' + previousGuessTracker.join(', '));
+        $('#previous-guesses').html('<b>Previous Guesses:</b> ' + previousGuessTracker.join(', '));
 
     })
 })
